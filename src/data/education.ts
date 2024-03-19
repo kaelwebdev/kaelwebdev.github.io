@@ -1,3 +1,13 @@
+export interface DataEducationItem {
+  date?: string,
+  title?: string,
+  company?: string,
+  description?: string,
+  link?: string,
+}
+
+export type DataEducationList = DataEducationItem[];
+
 const EDUCATION = [
     {
       date: "... - Siempre",

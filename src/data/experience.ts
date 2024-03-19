@@ -1,4 +1,14 @@
-const EXPERIENCIE = [
+export interface DataExperienceItem {
+  date?: string,
+  title?: string,
+  company?: string,
+  description?: string,
+  link?: string,
+}
+
+export type DataExperienceList = DataExperienceItem[];
+
+const EXPERIENCIE:DataExperienceList = [
   {
     date: "05/2021 - 07/2023",
     title: "Software Engineer - Frontend",

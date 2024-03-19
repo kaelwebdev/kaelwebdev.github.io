@@ -22,10 +22,21 @@ import GraphQL from "@/components/icons/GraphQL.astro"
 import MongoDB from "@/components/icons/MongoDB.astro"
 import CPlusPlus from "@/components/icons/CPlusPlus.astro"
 import NodeJS from "@/components/icons/NodeJS.astro"
-import Astro from "@/components/icons/Astro.astro"
+import Astro from "@/components/icons/AstroIcon.astro"
 import HTML from "@/components/icons/Html.astro"
 
-export const TAGS = {
+export interface DataTagItem {
+  name?: string,
+  class?: string,
+  icon?: any,
+}
+
+export interface TagItemList {
+  [key: string]: DataTagItem
+}
+
+
+export const TAGS:TagItemList = {
   NEXT: {
     name: "Next.js",
     class: "bg-gray-100 text-black",
