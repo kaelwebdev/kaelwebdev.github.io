@@ -1,0 +1,91 @@
+---
+import Clip from "@/components/icons/Clip.astro";
+import ExternalLink from "@/components/icons/ExternalLink.astro";
+import Mail from "@/components/icons/Mail.astro";
+import LinkedIn from "@/components/icons/LinkedIn.astro";
+import Internet from "@/components/icons/Internet.astro";
+import PhoneOff from "@/components/icons/PhoneOff.astro";
+---
+
+<div class="pt-2" >
+
+  <div class="flex flex-wrap">
+    <span id="copyable_item_email_btn" class="flex gap-x-2 rounded-full text-xs py-1 mb-2 text-black text-black dark:[&]:text-white pr-1">
+      <Mail  class="size-4"/>
+    </span>
+
+
+    <p id="copyable_item_email" class="pr-1" translate="no">kaelwebdev@gmail.com</p>
+    <span id="copyable_item_email_btn" class="flex gap-x-2 rounded-full text-xs py-1 px-2 mb-2 text-black bg-gray-100 text-black cursor-pointer print:hidden">
+      <Clip  class="size-4"/>
+    </span>
+  </div>
+
+  <div class="flex flex-wrap">
+    <span id="copyable_item_email_btn" class="flex gap-x-2 rounded-full text-xs py-1 mb-2 text-black text-black dark:[&]:text-white pr-1">
+      <LinkedIn  class="size-4"/>
+    </span>
+    <p id="copyable_item_linkedin" class="pr-1" translate="no">https://www.linkedin.com/in/kaelwebdev/</p>
+    <span id="copyable_item_linkedin_btn" class="flex gap-x-2 rounded-full text-xs py-1 px-2 mb-2 bg-gray-100 text-black mr-1 cursor-pointer print:hidden">
+      <Clip  class="size-4" />
+    </span>
+    <span class="flex gap-x-2 rounded-full text-xs py-1 px-2 mb-2 bg-gray-100 text-black cursor-pointer" >
+      <a href="https://www.linkedin.com/in/kaelwebdev/">
+        <ExternalLink class="size-4"/>
+      </a>
+    </span>
+  </div>
+
+  <div class="flex flex-wrap">
+    <span id="copyable_item_email_btn" class="flex gap-x-2 rounded-full text-xs py-1 mb-2 text-black text-black dark:[&]:text-white pr-1">
+      <Internet  class="size-4"/>
+    </span>
+    <p id="copyable_item_website" class="pr-1" translate="no">http://.../</p>
+    <span id="copyable_item_website_btn" class="flex gap-x-2 rounded-full text-xs py-1 px-2 mb-2 bg-gray-100 cursor-pointer text-black mr-1 print:hidden">
+      <Clip  class="size-4"/>
+    </span>
+    <span class="flex gap-x-2 rounded-full text-xs py-1 px-2 mb-2 bg-gray-100 text-black cursor-pointer">
+      <a href="">
+        <ExternalLink class="size-4"/>
+      </a>
+    </span>
+  </div>
+
+  <div class="flex flex-wrap">
+    <span id="copyable_item_email_btn" class="flex gap-x-2 rounded-full text-xs py-1 mb-2 text-black text-black dark:[&]:text-white pr-1">
+      <PhoneOff  class="size-4"/>
+    </span>
+    <p id="copyable_item_phone"> No contesto numeros desconocidos</p>
+  </div>
+
+</div>
+
+<script is:inline >
+
+    
+    const copyable_item_email_btn = document.querySelector("#copyable_item_email_btn");
+    copyable_item_email_btn.addEventListener("click", () => {
+      const copyable_item_email = document.querySelector("#copyable_item_email");
+      copiarTexto(copyable_item_email.innerText)
+    });
+
+    const copyable_item_linkedin_btn = document.querySelector("#copyable_item_linkedin_btn");
+    copyable_item_linkedin_btn.addEventListener("click", () => {
+      const copyable_item_linkedin = document.querySelector("#copyable_item_linkedin");
+      copiarTexto(copyable_item_linkedin.innerText)
+    });
+
+    const copyable_item_website_btn = document.querySelector("#copyable_item_website_btn");
+    copyable_item_website_btn.addEventListener("click", () => {
+      const copyable_item_website = document.querySelector("#copyable_item_website");
+      copiarTexto(copyable_item_website.innerText)
+    });
+
+
+    async function copiarTexto(text) {
+         await navigator.clipboard.writeText(text);
+     }  
+ </script>
+
+
+

@@ -1,0 +1,61 @@
+---
+import {TAGS} from "../data/tags"
+const personalImageAlt = "Carlos Daniel Cortez"
+const tags = [
+    TAGS.NodeJS, TAGS.NEXT, TAGS.ExpressJS, TAGS.REACT,
+    TAGS.ANGULAR, TAGS.Astro, TAGS.HTML, TAGS.CSS,
+    TAGS.TAILWIND, TAGS.ETC
+]
+---
+
+<article class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row">
+  <div
+    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty"
+  >
+    <p>
+      Me llamo Carlos Daniel Cortez, pero algunos me llaman Kael. Empecé en la
+      programación en el año 2014. Me enfoco, en toda tecnología relacionada con
+       <strong>Javascript</strong>: <ul class="flex flex-row flex-wrap mb-2 gap-x-2">
+        {tags.map((tag) => (
+          <li>
+            <span
+              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 mb-1`}
+            >
+              {tag?.icon && <tag.icon class="size-4" />}
+              {tag.name}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </p>
+
+    <p>
+      Memorizar cosas no es mi fuerte, pero si el ser autodidacta y resolver. Me encanta
+      aplicar buenas prácticas e implementar nuevas tecnologías. También he disfrutado 
+      de trabajar en equipo.
+    </p>
+
+    <p>
+      Estoy orgulloso de la <strong>innovación</strong> de un nuevo sistema de <strong>
+        visualización de datos</strong> universitarios</strong>.
+        Y el desarrollo de una app auténtica en el campo de la
+        <strong>comparativa de productos</strong>, para <strong>18 países.</strong>
+        App nominada y ganadora de los <strong>Latam Awards 2023</strong>. También
+        haber estado <strong>dentro del top 100</strong> de los usuarios <strong>más activos</strong> de GitHub en Colombia (2019-2020).
+    </p>
+
+    <p>
+      En octubre del 2023 decidí tomarme un descanso y <strong>ahora estoy listo para nuevos retos</strong>.
+    </p>
+
+    <p class="italic" >
+      "El conocimiento es dinámico,
+      lo esencial son las bases, 
+      lo derivado las buenas prácticas
+      y los frutos un cliente satisfecho y un software escalable" - by kaelwebdev - 2024
+    </p>
+  </div>
+
+  <img width="200" height="200" src="/kaelwebdev.webp" alt={personalImageAlt} class="rounded-full shadow-lg size-16 order-1 md:order-2" style="object-position: 50% 50%">
+  
+</article>
