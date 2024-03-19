@@ -1,4 +1,4 @@
-# 👨🏻‍💻 Porfolio para programadores y desarrolladores
+# 👨🏻‍💻 Porfolio / Curriculum / Hoja de vida / CV - kaelwebdev
 
 <div align="center">
 
@@ -7,5 +7,7 @@
 
 </div>
 
-
-<p></p>
+## Creditos
+<p>
+    Este proyecto es una modificacion del codigo fuente del [proyecto de midudev](https://github.com/midudev/porfolio.dev)
+</p>
