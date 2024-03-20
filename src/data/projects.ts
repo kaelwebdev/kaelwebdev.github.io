@@ -35,7 +35,7 @@ export const PROJECTS:DataEducationList = [
         //link: "",
         github: "https://github.com/kaelwebdev/online-directory",
         //image: "",
-        tags: [TAGS.REACT, TAGS.GRAPHQL, TAGS.APOLLOSERVER, TAGS.APOLLOCLIENT],
+        tags: [TAGS.REACT, TAGS.GRAPHQL, TAGS.APOLLOSERVER, TAGS.APOLLOCLIENT, TAGS.MONGODB],
       },
       {
         title: "HITCH - International product comparator",
@@ -49,6 +49,17 @@ export const PROJECTS:DataEducationList = [
         github: "https://apps.apple.com/co/app/hitch/id1591257825",
         //image: "",
         tags: [TAGS.REACT, TAGS.REACT_NATIVE, TAGS.EXPO, TAGS.JAVASCRIPT, TAGS.CSS],
+      },
+      {
+        title: "Agora Events",
+        description:
+          `
+            Web App para crear invitaciones a eventos sociales.
+          `,
+        //link: "",
+        github: "https://github.com/felipesv/agora-events",
+        //image: "",
+        tags: [TAGS.REACT, TAGS.REDUX, TAGS.ExpressJS, TAGS.TYPESCRIPT, TAGS.JAVASCRIPT, TAGS.BULMA ],
       },
       {
         title: "Segurity Chat - Chat encriptado",

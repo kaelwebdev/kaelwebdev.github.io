@@ -5,11 +5,13 @@ import SocialPill from "@/components/SocialPill.astro"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
 
 import Layout from "@/layouts/Layout.astro"
+
+import NextJS from "@/components/icons/NextJS.astro"
 ---
 
 <Layout
-  title=""
-  description=""
+  title="Design System Components"
+  description="Componentes que utilizados en esta Web App"
 >
   <SectionContainer class="py-44 pb-32 flex flex-col gap-y-10">
     <article class="mb-10">
@@ -19,13 +21,19 @@ import Layout from "@/layouts/Layout.astro"
     </article>
 
     <article class="mb-10">
-      <h1 class="mb-4 text-xl font-semibold">&lt SocialPill /&gt;</h1>
+      <h1 class="mb-4 text-xl font-semibold">Tags</h1>
 
       <div class="flex">
-        <SocialPill href="https://linkedin.com/in/kaelwebdev">
-          <LinkedInIcon class="size-4 md:size-6" />
-          LinkedIn
-        </SocialPill>
+        <ul class="flex flex-row mb-2 gap-x-2 flex-wrap">
+            <li>
+              <span
+                class={`flex gap-x-2 rounded-full text-xs bg-gray-100 text-black py-1 px-2 mb-1`}
+              >
+                <NextJS class="size-4" />
+                Next.js
+              </span>
+            </li>
+        </ul>
       </div>
     </article>
   </SectionContainer>

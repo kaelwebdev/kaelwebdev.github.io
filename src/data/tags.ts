@@ -194,6 +194,18 @@ export const TAGS:TagItemList = {
     icon: Astro,
   },
 
+  REDUX: {
+    name: "Redux",
+    class: "bg-gray-100 text-black",
+    //icon: Astro,
+  },
+
+  BULMA: {
+    name: "Bulma css",
+    class: "bg-gray-100 text-black",
+    //icon: Astro,
+  },
+
   ETC: {
     name: "etc...",
     class: "bg-gray-100 text-black",
