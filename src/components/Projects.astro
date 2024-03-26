@@ -3,7 +3,7 @@ import GitHub from "./icons/GitHub.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 import {PROJECTS} from "@/data/projects"
-
+import Tag from "@/components/Tag.astro"
 ---
 
 <div class="flex flex-col gap-y-16">
@@ -24,12 +24,7 @@ import {PROJECTS} from "@/data/projects"
       <ul class="flex flex-row mb-2 gap-x-2 flex-wrap">
           {tags?.map((tag) => (
             <li>
-              <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 mb-1`}
-              >
-                {tag?.icon && <tag.icon class="size-4" />}
-                {tag.name}
-              </span>
+              <Tag tag={tag}/>
             </li>
           ))}
         </ul>

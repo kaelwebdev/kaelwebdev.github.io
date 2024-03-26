@@ -35,9 +35,9 @@ const EDUCATION = [
       company: "Holberton",
       description:
         `
-         Trabajo en equipo y pensamiento algorítmico.
+         Trabajo en equipo, pensamiento algorítmico, y arquitecura de software.
          El objetivo del fundador es formar programadores de elite al nivel de Silicon Valley.
-         El contrato es desmedido, y la metodología sinceramente desgastante.
+         La metodología fue sinceramente desgastante.
          Fue como combinar un hackathon, un bootcamp, y un reality show.
         `,
     },

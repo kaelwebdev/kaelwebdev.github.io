@@ -1,12 +1,9 @@
 ---
 import Badge from "@/components/Badge.astro"
 import SectionContainer from "@/components/SectionContainer.astro"
-import SocialPill from "@/components/SocialPill.astro"
-import LinkedInIcon from "@/components/icons/LinkedIn.astro"
-
 import Layout from "@/layouts/Layout.astro"
-
-import NextJS from "@/components/icons/NextJS.astro"
+import { TAGS } from "@/data/tags"
+import Tag from "@/components/Tag.astro"
 ---
 
 <Layout
@@ -21,17 +18,15 @@ import NextJS from "@/components/icons/NextJS.astro"
     </article>
 
     <article class="mb-10">
-      <h1 class="mb-4 text-xl font-semibold">Tags</h1>
+      <h1 class="mb-4 text-xl font-semibold">List of &lt;Tag /&gt;</h1>
 
       <div class="flex">
         <ul class="flex flex-row mb-2 gap-x-2 flex-wrap">
             <li>
-              <span
-                class={`flex gap-x-2 rounded-full text-xs bg-gray-100 text-black py-1 px-2 mb-1`}
-              >
-                <NextJS class="size-4" />
-                Next.js
-              </span>
+              <Tag tag={TAGS.GRAPHQL}/>
+            </li>
+            <li>
+              <Tag tag={TAGS.NEXT}/>
             </li>
         </ul>
       </div>
