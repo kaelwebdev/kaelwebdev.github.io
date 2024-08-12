@@ -15,27 +15,21 @@ const EXPERIENCIE:DataExperienceList = [
     company: "Hitch",
     description:
       `
-        Fui responsable del desarrollo frontend.
-        Mantuve conexión directa con el CEO y participación
-        importante en la toma de decisiones de la web app móvil principal
-        de la empresa. Tengo un buen recuerdo de mi exjefe
-        y del equipo de trabajo.
+        Responsable de dar soluciones aplicadas en la creación, desarrollo  y mantenimiento de todas las funcionalidades frontend de la aplicación de la empresa. Incluyendo el trabajo en equipo con otras áreas de IT, Marketing, e Inteligencia de datos. Además, debía participar en la toma de decisiones en contacto directo con el CEO. Logrando que la aplicación cumpliera su objetivo inicial de llegar a 18 países como una de las aplicaciones más innovadoras en el contexto de ayuda en la toma de decisiones inteligentes para el usuario. La aplicación ofrece información comparativa entre productos de diversas categorías.
       `,
     link: "https://apps.apple.com/co/app/hitch/id1591257825",
   },
   {
-    date: "7/2019 - 9/2019",
+    date: "07/2019 - 07/2020",
     title: "Multimedia Engineer - Full Stack",
     company: "Nomen nescio",
     description:
       `
-        Responsable del desarrollo frontend y backend
-        de una web app para móvil.
-        Fue interesante haber investigado los temas referentes a seguridad.
+        Responsable de la creación, desarrollo, y mantenimiento  frontend y backend de una web app para móvil que consistía en crear un chat seguro para uso interno de la empresa. Aquí hice investigación y uso de técnicas de encriptación para cumplir con el objetivo principal de la empresa para esta app.
       `,
   },
   {
-    date: "2018-2019",
+    date: "06/2018-06/2019",
     title: "Multimedia Engineer - Full Stack",
     company: "USB Cali",
     description:

@@ -5,7 +5,9 @@ import CopyableElements from "@/components/CopyableElements.astro";
 
 const currentDate = new Date();
 const startYear = 2014;
-const yearsPassed = currentDate.getFullYear() - startYear;
+const firstwork = 2019;
+const OverallExperience = currentDate.getFullYear() - startYear -1;
+const workExpirence = currentDate.getFullYear() - firstwork - 1;
 ---
 
 <div class="max-w-xl">
@@ -33,16 +35,32 @@ const yearsPassed = currentDate.getFullYear() - startYear;
     id="contacto"
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-400 [&>strong]:text-sky-500 [&>strong]:font-semibold dark:text-gray-300"
   >
-    {yearsPassed} años de experiencia. <strong>Multimedia Engineer</strong>, <strong
+    Desde el {startYear} en el mundo de la programación y desarrollo. <strong>Multimedia Engineer</strong>, <strong
       >Software Developer</strong
     > de Cali, Colombia. Especializado en el <strong
       >desarrollo de aplicaciones web</strong
     >.
+  </p>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-400 [&>strong]:text-sky-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    Conocimiento general: {OverallExperience} años. <!-- (2014-2023). -->
+    Experiencia laboral: {workExpirence} años. <!-- (2018-2021). --> <!-- 1 + 1 + 2 -->
+    Javascript: 6.5 años. <!--  (desde 2017-2023). --> <!-- 1.5 + 1 + 1 + 1 + 2 -->
+    Typescript: 6.5 años.  <!-- (desde 2017-2023). -->
+    React: 2 años.<!-- (2021-2023). -->
+    Angular: 2 años. <!-- (2018-2020). -->
+    Educación universitaria: 5 años. <!-- (2013-2019). -->
+    Especialización: 2 años. <!-- (2019-2021). -->
   </p>
   
   <CopyableElements />
   <button onclick="print()" class="inline-flex items-center justify-center gap-2 px-4 py-1 text-gray-800 transition bg-gray-100 border border-gray-300 rounded-full dark:bg-gray-800 dark:border-gray-600  hover:dark:border-white dark:text-white focus-visible:ring-yellow-500/80 text-md hover:bg-gray-900 hover:border-gray-700 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black print:hidden">
     Download PDF
   </button>
-
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-400 [&>strong]:text-sky-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    Última actualización 12/08/2024.
+  </p>
 </div>

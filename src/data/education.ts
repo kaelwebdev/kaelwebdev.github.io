@@ -26,7 +26,7 @@ const EDUCATION = [
       title: "Full Stack Web Developer",
       company: "Holberton",
       description:
-        `Segunda parte del programa de estudio donde el énfasis fue el desarrollo web. 
+        `Especialización en Desarrollo de Software Web.
         `
     },
     {
@@ -35,10 +35,8 @@ const EDUCATION = [
       company: "Holberton",
       description:
         `
-         Trabajo en equipo, pensamiento algorítmico, y arquitecura de software.
-         El objetivo del fundador es formar programadores de elite al nivel de Silicon Valley.
-         La metodología fue sinceramente desgastante.
-         Fue como combinar un hackathon, un bootcamp, y un reality show.
+         Especialización en Desarrollo de Software. Trabajo en equipo, pensamiento algorítmico, y arquitecura de software.
+         Metodologia basada en proyectos.
         `,
     },
     {
