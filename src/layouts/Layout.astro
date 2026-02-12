@@ -4,13 +4,16 @@ import "@fontsource-variable/onest"
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import { ViewTransitions } from "astro:transitions"
+import { PORTFOLIO_URL, SEO_KEYWORDS } from "../data/constants"
 
 interface Props {
   title: string
   description: string
+  image?: string
+  canonicalUrl?: string
 }
 
-const { description, title } = Astro.props
+const { description, title, image = "/yo.webp", canonicalUrl = PORTFOLIO_URL } = Astro.props
 ---
 
 <!doctype html>

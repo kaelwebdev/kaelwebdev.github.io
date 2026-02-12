@@ -10,15 +10,16 @@ import ProfileCheck from "@/components/icons/ProfileCheck.astro"
 import Projects from "@/components/Projects.astro"
 import SectionContainer from "@/components/SectionContainer.astro"
 import Hero from "@/components/Hero.astro"
-import EXPERIENCIE from '@/data/experience.ts'
+import { SEO_TITLE, SEO_DESCRIPTION } from '@/data/constants'
+import EXPERIENCE from '@/data/experience.ts'
 import EDUCATION from '@/data/education.ts'
 import Cursos from '@/components/Cursos.astro'
 
 ---
 
 <Layout
-  title="Porfolio de kaelwebdev - Ingeniniero, Desarrollador y Programador Web con 10 años de experiencia"
-  description="Contrata a kaelwebdev para crear tu aplicación web/apps."
+  title={SEO_TITLE}
+  description={SEO_DESCRIPTION}
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
@@ -27,6 +28,15 @@ import Cursos from '@/components/Cursos.astro'
     </Hero>
     </SectionContainer>
     <div class="space-y-24">
+       <SectionContainer id="sobre-mi">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
+      >
+        <ProfileCheck class="size-8" />
+        Sobre mí
+      </h2>
+      <AboutMe />
+    </SectionContainer>
     <SectionContainer id="experiencia">
       <h2
         class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
@@ -34,7 +44,7 @@ import Cursos from '@/components/Cursos.astro'
         <Briefcase class="size-8" />
         Experiencia destacada
       </h2>
-      <Experience data={EXPERIENCIE}/>
+      <Experience data={EXPERIENCE}/>
     </SectionContainer>
 
     <SectionContainer id="educacion">
@@ -47,15 +57,6 @@ import Cursos from '@/components/Cursos.astro'
       <Experience data={EDUCATION}/>
     </SectionContainer>
 
-    <!-- <SectionContainer id="proyectos">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <CodeIcon class="size-7" />
-        Proyectos
-      </h2>
-      <Projects />
-    </SectionContainer> -->
     <SectionContainer id="proyectos">
       <h2
         class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
@@ -66,15 +67,7 @@ import Cursos from '@/components/Cursos.astro'
       <Projects />
     </SectionContainer>
 
-    <SectionContainer id="sobre-mi">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
-      >
-        <ProfileCheck class="size-8" />
-        Sobre mí
-      </h2>
-      <AboutMe />
-    </SectionContainer>
+   
     <SectionContainer id="cursos">
       <h2
         class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"

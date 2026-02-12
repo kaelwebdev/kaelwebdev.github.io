@@ -1,57 +1,69 @@
 ---
-const personalImageAlt = "Carlos Daniel Cortez (kael)";
+import { 
+  PERSONAL_NAME,
+  PERSONAL_IMAGE_ALT,
+  PERSONAL_IMAGE_URL,
+  START_YEAR,
+  FIRST_WORK_YEAR,
+  LINKEDIN_URL,
+  AVAILABILITY_TEXT,
+  LAST_UPDATE,
+  workExperience,
+  overallExperience,
+  TEAMWORK,
+  TECH_JAVASCRIPT_YEARS,
+  TECH_TYPESCRIPT_YEARS,
+  TECH_REACT_YEARS,
+  TECH_ANGULAR_YEARS,
+  EDUCATION_YEARS,
+  HOLBERTON_SPECIALIZATION_YEARS
+} from '@/data/constants'
 import Badge from "@/components/Badge.astro";
 import CopyableElements from "@/components/CopyableElements.astro";
 
-const currentDate = new Date();
-const startYear = 2014;
-const firstwork = 2019;
-const OverallExperience = currentDate.getFullYear() - startYear -1;
-const workExpirence = currentDate.getFullYear() - firstwork - 1;
+
 ---
 
 <div class="max-w-xl">
   <div class="flex gap-4 mb-4">
     <img
-      class="rounded-full shadow-lg size-16"
-      src="/kaelwebdev.webp"
-      alt={personalImageAlt}
+      class="rounded-full shadow-lg size-32 object-contain"
+      src={PERSONAL_IMAGE_URL}
+      alt={PERSONAL_IMAGE_ALT}
+      loading="lazy"
     />
     <a
-      href="https://linkedin.com/in/kaelwebdev"
+      href={LINKEDIN_URL}
       target="_blank"
       rel="noopener noreferrer"
       class="flex items-center transition md:justify-center md:hover:scale-105"
     >
-      <Badge>Disponible para trabajar</Badge>
+      <Badge>{AVAILABILITY_TEXT}</Badge>
     </a>
   </div>
   <h1
     class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
   >
-    Hey, soy Carlos Daniel Cortez
+    {PERSONAL_NAME}
   </h1>
   <p
     id="contacto"
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-400 [&>strong]:text-sky-500 [&>strong]:font-semibold dark:text-gray-300"
   >
-    Desde el {startYear} en el mundo de la programación y desarrollo. <strong>Multimedia Engineer</strong>, <strong
-      >Software Developer</strong
-    > de Cali, Colombia. Especializado en el <strong
-      >desarrollo de aplicaciones web</strong
-    >.
+    Desde el {START_YEAR} en el mundo de la programación y desarrollo. <strong>Multimedia Engineer</strong>, <strong>Software Developer</strong> de Cali, Colombia. Especializado en el <strong>desarrollo de aplicaciones web</strong>.
   </p>
   <p
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-400 [&>strong]:text-sky-500 [&>strong]:font-semibold dark:text-gray-300"
   >
-    Conocimiento general: {OverallExperience} años. <!-- (2014-2023). -->
-    Experiencia laboral: {workExpirence} años. <!-- (2018-2021). --> <!-- 1 + 1 + 2 -->
-    Javascript: 6.5 años. <!--  (desde 2017-2023). --> <!-- 1.5 + 1 + 1 + 1 + 2 -->
-    Typescript: 6.5 años.  <!-- (desde 2017-2023). -->
-    React: 2 años.<!-- (2021-2023). -->
-    Angular: 2 años. <!-- (2018-2020). -->
-    Educación universitaria: 5 años. <!-- (2013-2019). -->
-    Especialización: 2 años. <!-- (2019-2021). -->
+    Experiencia laboral: {workExperience} años.
+    Trabajo en equipo: {TEAMWORK} años.
+    Javascript: {TECH_JAVASCRIPT_YEARS} años. 
+    Typescript: {TECH_TYPESCRIPT_YEARS} años. 
+    React: {TECH_REACT_YEARS} años. 
+    Angular: {TECH_ANGULAR_YEARS} años. 
+    Educación universitaria: {EDUCATION_YEARS} años. 
+    Especialización: {HOLBERTON_SPECIALIZATION_YEARS} años.
+    Trayectoria Tech: {overallExperience} años. 
   </p>
   
   <CopyableElements />
@@ -61,6 +73,6 @@ const workExpirence = currentDate.getFullYear() - firstwork - 1;
   <p
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-400 [&>strong]:text-sky-500 [&>strong]:font-semibold dark:text-gray-300"
   >
-    Última actualización 12/08/2024.
+    Última actualización {LAST_UPDATE}.
   </p>
 </div>

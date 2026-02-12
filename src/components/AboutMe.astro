@@ -1,7 +1,7 @@
 ---
 import {TAGS} from "../data/tags"
 import Tag from "./Tag.astro"
-const personalImageAlt = "Carlos Daniel Cortez"
+
 const tags = [
     TAGS.NodeJS, TAGS.NEXT, TAGS.ExpressJS, TAGS.REACT,
     TAGS.ANGULAR, TAGS.Astro, TAGS.HTML, TAGS.CSS,
@@ -13,48 +13,27 @@ const tags = [
   <div
     class="[&>p]:mb-4 [&>p>strong]:text-sky-500 dark:[&>p>strong]:text-yellow-400 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty"
   >
-    <p>
-      Me llamo Carlos Daniel Cortez, pero algunos me llaman Kael. Empecé en la
-      programación en el año 2014. Me enfoco, en toda tecnología relacionada con
-       <strong>Javascript</strong>: <ul class="flex flex-row flex-wrap mb-2 gap-x-2">
-        {tags.map((tag) => (
-          <li>
-            <Tag tag={tag}/>
-          </li>
-        ))}
-      </ul>
-    </p>
+    <ul class="flex flex-row flex-wrap mb-2 gap-x-2">
+      {tags.map((tag) => (
+        <li>
+          <Tag tag={tag}/>
+        </li>
+      ))}
+    </ul>
 
     <p>
-      Mi compromiso radica en la capacidad de tomar decisiones estratégicas 
-      y ejecutar soluciones que no solo aborden las necesidades inmediatas, 
+      Brindo soluciones que no solo aborden las necesidades inmediatas, 
       sino que también consideren cuidadosamente el futuro y el crecimiento 
-      sostenible de la empresa. Mi enfoque se centra en comprender a fondo 
-      cada proyecto y adaptar las soluciones de manera precisa, maximizando 
-      así el valor y el impacto positivo en el largo plazo.
+      sostenible de la empresa o proyecto.
     </p>
 
     <p>
-      Estoy orgulloso de la <strong>innovación</strong> de un nuevo sistema de <strong>
-        visualización de datos</strong> universitarios</strong>.
-        Y el desarrollo de una app auténtica en el campo de la
-        <strong>comparativa de productos</strong>, para <strong>18 países.</strong>
-        App nominada y ganadora de los <strong>Latam Awards 2023</strong>. También
-        haber estado <strong>dentro del top 100</strong> de los usuarios <strong>más activos</strong> de GitHub en Colombia (2019-2020).
+      Estoy orgulloso de la <strong>innovación</strong> de un nuevo sistema de <strong>visualización de datos</strong> universitarios. Y el desarrollo de una app auténtica en el campo de la <strong>comparativa de productos</strong>, para <strong>18 países</strong>. App nominada y ganadora de los <strong>Latam Awards 2023</strong>. También haber estado <strong>dentro del top 100</strong> de los usuarios <strong>más activos</strong> de GitHub en Colombia (2019-2020).
     </p>
 
     <p>
       En julio del 2023 decidí tomarme un descanso y <strong>ahora estoy listo para nuevos retos</strong>.
     </p>
-
-    <p class="italic" >
-      "El conocimiento es dinámico,
-      lo esencial son las bases, 
-      lo derivado las buenas prácticas
-      y los frutos un software mantenible y escalable" - by kaelwebdev - 2024
-    </p>
   </div>
-
-  <img width="200" height="200" src="/kaelwebdev.webp" alt={personalImageAlt} class="rounded-full shadow-lg size-16 order-1 md:order-2" style="object-position: 50% 50%">
   
 </article>
