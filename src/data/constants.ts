@@ -60,4 +60,4 @@ export const IS_AVAILABLE_FOR_WORK = true;
 export const AVAILABILITY_TEXT = "Disponible para trabajar";
 
 // Última actualización
-export const LAST_UPDATE = "12/08/2024";
+export const LAST_UPDATE = "30/04/2026";

@@ -37,6 +37,36 @@ export interface TagItemList {
 
 
 export const TAGS:TagItemList = {
+  GENTLE_AI: {
+    name: "Gentle AI",
+    class: "bg-gray-100 text-black",
+    //icon: NextJS,
+  },
+  OPENCODE: {
+    name: "Opencode",
+    class: "bg-gray-100 text-black",
+    //icon: NextJS,
+  },
+  PRISMA: {
+    name: "Prisma ORM",
+    class: "bg-gray-100 text-black",
+    //icon: NextJS,
+  },
+  SUPABASE: {
+    name: "Supabase",
+    class: "bg-gray-100 text-black",
+    //icon: NextJS,
+  },
+  VITEST: {
+    name: "Vitest",
+    class: "bg-gray-100 text-black",
+    //icon: NextJS,
+  },
+  POSTGRESQL: {
+    name: "PostgreSQL",
+    class: "bg-gray-100 text-black",
+    //icon: NextJS,
+  },
   NEXT: {
     name: "Next.js",
     class: "bg-gray-100 text-black",

@@ -12,6 +12,31 @@ export interface DataProjectItem {
 export type DataEducationList = DataProjectItem[];
 
 export const PROJECTS:DataEducationList = [
+  {
+        title: "Sistema GAPH - Gestión de Asambleas para Propiedad Horizontal",
+        description:
+          `
+            Sistema de gestión para unidades residenciales (condominios) 
+            para la administración del sistema de votos que se presentan 
+            en una asamblea, ademas de tambien poder gestionar comunicados y PQRS.
+          `,
+        //link: "",
+        github: "https://github.com/kaelwebdev/sistema_gaph",
+        //image: "",
+        tags: [TAGS.GENTLE_AI, TAGS.OPENCODE, TAGS.TYPESCRIPT, TAGS.POSTGRESQL, TAGS.VITEST, TAGS.SUPABASE, TAGS.PRISMA, TAGS.NEXT, TAGS.TAILWIND],
+    },
+    {
+        title: "Domain redirect blocker - Google Chrome Extension",
+        description:
+          `
+            Extensión para Google Chrome que bloquea las redirecciones
+            que no pertenecen al dominio.
+          `,
+        //link: "",
+        github: "https://github.com/kaelwebdev/domain-redirect-blocker",
+        //image: "",
+        tags: [TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS],
+    },
     {
         title: "Animeflv without redirections - Plugin Google Chrome",
         description:
@@ -23,7 +48,7 @@ export const PROJECTS:DataEducationList = [
         github: "https://github.com/kaelwebdev/animeflv-without-redirections",
         //image: "",
         tags: [TAGS.JAVASCRIPT],
-      },
+    },
     {
         title: "Online Directory",
         description:
@@ -45,8 +70,8 @@ export const PROJECTS:DataEducationList = [
             Al comparar precios en los diferentes puntos de venta de cada producto, en tiempo real.
             (Tecnología, Mercado, Farmacia)
           `,
-        link: "https://play.google.com/store/apps/details?id=com.hitch.app.android&pcampaignid=web_share",
-        github: "https://apps.apple.com/co/app/hitch/id1591257825",
+        //link: "https://play.google.com/store/apps/details?id=com.hitch.app.android&pcampaignid=web_share",
+        //github: "https://apps.apple.com/co/app/hitch/id1591257825",
         //image: "",
         tags: [TAGS.REACT, TAGS.REACT_NATIVE, TAGS.EXPO, TAGS.JAVASCRIPT, TAGS.CSS],
       },
